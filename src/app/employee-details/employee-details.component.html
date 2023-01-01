@@ -1,0 +1,19 @@
+<div class="row">
+
+    <!--  *ngFor="let card of cards; index as i"-->
+
+    <div class="col-3 custom-card">
+        <div class="card ">
+            <img class="card-img-top" src="https://www.w3schools.com/bootstrap4/img_avatar1.png">
+            <div class="card-body">
+                 <h4 class="card-title">{{employee.name}}</h4>
+                <p class="card-text">{{employee.salary}}</p>
+                <button type="button" class="btn btn-success"(click)="changeStatus(employee)" >{{employee.status == "UN_BLOCKED" ? "Block" : "Unblock"}}</button>
+
+            </div>
+        </div>
+
+    </div>
+
+
+</div>

@@ -1,0 +1,18 @@
+<div class="row">
+
+    <!--  *ngFor="let card of cards; index as i"-->
+
+    <div class="col-3 custom-card" *ngFor="let employee of blockedEmployees">
+        <div class="card ">
+            <img class="card-img-top" src="https://www.w3schools.com/bootstrap4/img_avatar1.png">
+            <div class="card-body">
+                <h4 class="card-title">{{employee.name}}</h4>
+                <p class="card-text">{{employee.salary}}</p>
+              <p class="card-text">{{employee.department}}</p>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
